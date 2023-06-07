@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration page</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <h1>Registration Page</h1>
+    <nav class="dropdown">
+      <button class="dropbtn">Navigation</button>
+      <nav class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="price-list.html">Price List</a>
+        <a href="rego.html">Registration</a>
+        <a href="contact-page.html">Contact Page</a>
+      </nav>
+    </nav>
+    <section class="customer-info">
+      <form action="example.html" method="get">
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="First name here"
+        />
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Last name here"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email address"
+        />
+
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="New username here"
+        />
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          placeholder="New password here"
+        />
+        <label for="pwdconfirmation">Password Confirmation:</label>
+        <input
+          type="password"
+          id="pwdconfirmation"
+          name="pwdconfirmation"
+          placeholder="Please confirm password here"
+        />
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+
+        <label for="text">Please select your gender</label>
+        <div id="genderbox">
+          <input type="radio" id="Male" name="Gender" value="Male" />
+          <label for="Male">Male</label>
+          <input type="radio" id="Female" name="Gender" value="Female" />
+          <label for="female">Female</label>
+          <input type="radio" id="N/A" name="Gender" value="N/A" />
+          <label for="N/A">N/A</label>
+        </div>
+        <br />
+
+        <label id="pref" for="text">Preference</label>
+        <div class="grid">
+          <div>
+            <input
+              type="checkbox"
+              id="redpepper"
+              name="Red Pepper"
+              value="Red Pepper"
+            />
+          </div>
+
+          <div>
+            <label for="redpepper">Red Pepper</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="blackpepper"
+              name="Black Pepper"
+              value="BlackPepper"
+            />
+          </div>
+
+          <div>
+            <label for="Black Pepper">Black Pepper</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="whitepepper"
+              name="White Pepper"
+              value="White Pepper"
+            />
+          </div>
+
+          <div>
+            <label for="White Pepper">White Pepper</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="greenpepper"
+              name="Green Pepper"
+              value="Green Pepper"
+            />
+          </div>
+
+          <div>
+            <label for="Green Pepper">Green Pepper</label>
+          </div>
+        </div>
+        <label class="shippingreglabel" for="text">Shipping region</label>
+        <select name="region" id="region">
+          <option value="none">None</option>
+          <option value="Australia">Australia & New Zealand</option>
+          <option value="Europe">E.U.</option>
+          <option value="East Asia">Japan / China / Korea</option>
+          <option value="S.E. Asia">South-East Asia</option>
+          <option value="North America">U.S. / Canada</option>
+        </select>
+        <br />
+        <div class="tacbox">
+          <input id="checkbox" type="checkbox" required />
+          <label for="checkbox">
+            I agree to these <a href="#">Terms and Conditions</a>.</label
+          >
+        </div>
+        <br />
+        <button type="submit" value="Submit">SEND IT</button>
+      </form>
+    </section>
+  </body>
+</html>

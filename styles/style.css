@@ -1,0 +1,360 @@
+h1 {
+  color: var(--h1-color);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+body {
+  background-color: #fefae0;
+}
+/* below are for the NAVIGATION DROP-DOWN */
+.dropdown {
+  position: absolute;
+  /* margin-top: 10px; */
+  height: 47px;
+}
+.dropbtn {
+  background-color: #b5b991;
+  color: white;
+  padding: 23px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: sans-serif;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #8a906d;
+}
+
+/* below is for the REGISTRATION PAGE */
+
+.customer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.shippingreglabel {
+  padding-bottom: 0.5rem;
+}
+
+#genderbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50px 100px;
+}
+
+.tacbox {
+  display: block;
+  padding: 0.5em;
+  margin: 1em;
+  border: 2px solid #dddddd;
+  background-color: #b1cec4;
+  max-width: 800px;
+}
+
+input {
+  height: 1em;
+  width: 2em;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  height: 2em;
+}
+
+#pref {
+  padding-bottom: 5px;
+}
+
+/* below is for table on PRICE-LIST PAGE */
+.price-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jar-image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  height: auto;
+}
+
+.jar-description-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+.red-description,
+.white-description,
+.black-description {
+  padding: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background-color: #d6eeee;
+}
+
+.pricelist-info {
+  padding: 5px;
+  font-weight: 500;
+}
+/* below is the styling for HOME PAGE */
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.one {
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(36, 164, 138);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two {
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(211, 79, 79);
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-2 {
+  float: left;
+  padding-right: 30px;
+}
+
+.three {
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(67, 91, 175);
+}
+
+.four {
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(191, 64, 191);
+  float: right;
+}
+
+.text-4 {
+  padding-right: 20px;
+}
+
+.five {
+  width: 80vw;
+  height: 100%;
+  background-color: #fb8500;
+}
+
+.six {
+  width: 80vw;
+  height: 100%;
+  background-color: #eddea4;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seven {
+  width: 80vw;
+  height: 100%;
+}
+
+/* below is the stylling for CONTACT PAGE */
+:root {
+  --primary-color: #010712;
+  --secondary-color: #555657;
+  --bg-color: #fefae0;
+  --button-color: #3b3636;
+  --h1-color: #3f444c;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+}
+
+.left-col {
+  width: 80vw;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1606374067068-2d031aed64e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-col {
+  background: var(--bg-color);
+  width: 80vw;
+  height: 100vh;
+  padding: 5rem 3.5rem;
+}
+
+h1,
+label,
+button,
+.description {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  width: 40vw;
+  margin: 0.25rem 0;
+}
+
+label,
+.description {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+form {
+  width: 31.25rem;
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+input,
+textarea,
+label {
+  width: 40vw;
+  display: block;
+}
+
+p,
+placeholder,
+input,
+textarea {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--primary-color);
+}
+
+input,
+textarea {
+  color: var(--primary-color);
+  font-weight: 400;
+  background: var(--bg-color);
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 300;
+  background: var(--button-color);
+  color: var(--bg-color);
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+input:hover,
+textarea:hover,
+button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  opacity: 0.8;
+}
