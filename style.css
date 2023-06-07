@@ -7,7 +7,8 @@ h1 {
   color: darkblue;
 }
 
-h3, h6 {
+h3,
+h6 {
   background-color: lightgray;
   color: darkred;
 }
@@ -23,7 +24,7 @@ h3, h6 {
 }
 
 .my_image {
-  width: 200px;
+  width: 201px;
   height: auto;
 }
 
@@ -58,43 +59,42 @@ div p {
   top: 10px;
 }
 
-
 /*! positioning */
 
 .static {
-    background-color: lightblue;
-    /* static is the default position */
+  background-color: lightblue;
+  /* static is the default position */
 }
 
 .relative {
-    position: relative;
-    left: 20px;
-    top: 20px;
-    background-color: lightcoral;
-    /* moves the box 20px to the right and 20px down from its normal position */
+  position: relative;
+  left: 20px;
+  top: 20px;
+  background-color: lightcoral;
+  /* moves the box 20px to the right and 20px down from its normal position */
 }
 
 .absolute {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: lightgreen;
-    /* positions the box at the bottom right corner of the closest positioned parent (or the viewport if no positioned parent) */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: lightgreen;
+  /* positions the box at the bottom right corner of the closest positioned parent (or the viewport if no positioned parent) */
 }
 
 .fixed {
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: lightsalmon;
-    /* positions the box at the top right corner of the viewport */
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: lightsalmon;
+  /* positions the box at the top right corner of the viewport */
 }
 
 .sticky {
-    position: sticky;
-    top: 0;
-    background-color: lightpink;
-    /* when scrolling, the box will stick to the top of the viewport until its parent is out of view */
+  position: sticky;
+  top: 0;
+  background-color: lightpink;
+  /* when scrolling, the box will stick to the top of the viewport until its parent is out of view */
 }
 
 .gap {
